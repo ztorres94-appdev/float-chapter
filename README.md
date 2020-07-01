@@ -1,4 +1,15 @@
 # Ruby Practice
+
+Run your Ruby file by typing `ruby ` and then the name of the file you want to run in the Terminal.
+
+If we want to run `float_round.rb`, we can write the command:
+
+```bash
+ruby float_round.rb
+```
+
+To re-run this command, you can use the UP and DOWN arrow keys to look at the history of commands you've run in a Terminal.
+
 ## Float
 ### basic math, hypotenuse
 A right triangle's two shorter sides have length 2.8 and 4.5. How long is its longest side?
@@ -12,7 +23,7 @@ where a and b are the lengths of the shorter sides, and c is the length of the l
 
 Your output should be a number; for example,
 
-2.3
+5.3
 
 
 Read more about the formula: https://www.mathsisfun.com/pythagoras.html
