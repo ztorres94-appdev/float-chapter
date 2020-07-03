@@ -11,7 +11,7 @@ ruby float_round.rb
 To re-run this command, you can use the UP and DOWN arrow keys to look at the history of commands you've run in a Terminal.
 
 ## Float
-### basic math, hypotenuse
+### float_find_hypotenuse.rb
 A right triangle's two shorter sides have length 2.8 and 4.5. How long is its longest side?
 
 Remember: the Pythagorean Theorem says that
@@ -27,5 +27,5 @@ Your output should be a number; for example,
 
 
 Read more about the formula: https://www.mathsisfun.com/pythagoras.html
-### rounding
-Output 10 / 3 rounded to 3 decimal places.
+### float_rounding.rb
+Output ten divided by 3 rounded to 3 decimal places.
