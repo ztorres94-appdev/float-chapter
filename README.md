@@ -29,3 +29,13 @@ Your output should be a number; for example,
 Read more about the formula: https://www.mathsisfun.com/pythagoras.html
 ### float_rounding.rb
 Output ten divided by 3 rounded to 3 decimal places.
+
+## Specs
+<details>
+  <summary>Click here to see names of each test</summary>
+
+float_find_hypotenuse.rb should output '5.3'' 
+
+float_round.rb should output '3.333' 
+
+</details>
