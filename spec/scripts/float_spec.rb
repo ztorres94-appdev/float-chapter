@@ -8,8 +8,13 @@ describe "float_find_hypotenuse.rb" do
           "Expected 'float_find_hypotenuse.rb' to NOT literally print '5.3', but did anyway."
       end
     end
-    
-    expect { require_relative '../../float_find_hypotenuse' }.to output("5.3\n").to_stdout
+
+    output = with_captured_stdout { require_relative('../../float_find_hypotenuse')} 
+    output = "empty" if output.empty? 
+    expect(output.match?(/5.3\n/i)).to be(true),
+      "Expected float_find_hypotenuse.rb output to be '5.3\n', but was #{output}."
+
+    # expect { require_relative '../../float_find_hypotenuse' }.to output("5.3\n").to_stdout
     
   end
 end
@@ -25,7 +30,23 @@ describe "float_round.rb" do
           "Expected 'float_round.rb' to NOT literally print '3.333', but did anyway."
       end
     end
-    expect { require_relative '../../float_round' }.to output("3.333\n").to_stdout
+
+    output = with_captured_stdout { require_relative('../../float_round')} 
+    output = "empty" if output.empty? 
+    expect(output.match?(/3.333\n/i)).to be(true),
+      "Expected float_round.rb output to be '3.333\n', but was #{output}."
+
+    # expect { require_relative '../../float_round' }.to output("3.333\n").to_stdout
 
   end
+end
+
+
+def with_captured_stdout
+  original_stdout = $stdout  # capture previous value of $stdout
+  $stdout = StringIO.new     # assign a string buffer to $stdout
+  yield                      # perform the body of the user code
+  $stdout.string             # return the contents of the string buffer
+ensure
+  $stdout = original_stdout  # restore $stdout to its previous value
 end
