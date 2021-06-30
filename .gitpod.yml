@@ -1,4 +1,4 @@
-image: jelaniwoods/appdev2021-string-chapter@sha256:e6a0c543f69fc77beccaf4fdb671719d09da0e2fdbcfc03393becf638cf9c274
+image: jelaniwoods/appdev2021-float-chapter@sha256:f4ef5ec2fbfd837e53957ee29492e0908e49a23186c859bdb3a0c981441d4b4a
 
 tasks:
   - command: bundle install
