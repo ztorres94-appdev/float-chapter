@@ -13,8 +13,6 @@ describe "float_find_hypotenuse.rb" do
     output = "empty" if output.empty? 
     expect(output.match?(/5.3\n/i)).to be(true),
       "Expected float_find_hypotenuse.rb output to be '5.3\n', but was #{output}."
-
-    # expect { require_relative '../../float_find_hypotenuse' }.to output("5.3\n").to_stdout
     
   end
 end
@@ -35,8 +33,6 @@ describe "float_round.rb" do
     output = "empty" if output.empty? 
     expect(output.match?(/3.333\n/i)).to be(true),
       "Expected float_round.rb output to be '3.333\n', but was #{output}."
-
-    # expect { require_relative '../../float_round' }.to output("3.333\n").to_stdout
 
   end
 end
